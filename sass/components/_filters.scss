@@ -1,0 +1,23 @@
+.filters {}
+
+.section {}
+
+.container {}
+
+.visually-hidden {}
+
+.filters__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.list {}
+
+.filters__item {
+    margin-right: 8px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

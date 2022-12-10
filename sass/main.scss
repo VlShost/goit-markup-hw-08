@@ -1,0 +1,27 @@
+// utils
+@import "./utils/vars";
+@import "./utils/visually-hidden";
+
+// base
+@import "./base/base";
+@import "./base/reset";
+
+// all-pages
+@import "./components/header";
+@import "./components/logo";
+@import "./components/header-page-links";
+@import "./components/header-address-list";
+@import "./components/btns";
+@import "./components/footer";
+
+// main-page
+@import "./components/hero";
+@import "./components/about";
+@import "./components/what-we-do";
+@import "./components/crew";
+@import "./components/clients";
+@import "./components/modal";
+
+// portfolio-page
+@import "./components/filters";
+@import "./components/projects";
