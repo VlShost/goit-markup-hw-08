@@ -7,14 +7,33 @@
 .footer-wrapper {
     display: block;
     text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: baseline;
+        text-align: start;
+    }
 }
 
 .footer-align {
-    justify-content: space-between;
+    @media screen and (min-width: $desktop) {
+        justify-content: space-between;
+    }
 }
 
 .footer__address-wrapper {
     margin-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0;
+    }
 }
 
 .address__list {
@@ -50,7 +69,10 @@
 
 .footer__social-wrapper {
     margin-bottom: 60px;
-    // margin-left: 70px;
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 70px;
+    }
 }
 
 .strong {
@@ -98,19 +120,25 @@
 
 .sub {
     display: block;
-    // flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    // margin-left: 93px;
+    
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 93px;
+    }
 }
 
 .sub__form {
     display: block;
     // text-align: center;
-    // display: flex;
     // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
 }
 
 .sub__label {
@@ -143,11 +171,6 @@
         border-color: var(--accent-color);
     }
 
-    // @media screen and (min-width: 450px) {
-    //     min-width: 270px;
-    //     max-width: 450px;
-    // }
-
         @media screen and (min-width: $tablet) {
         width: 450px;
     }
@@ -166,7 +189,6 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    // margin-left: 12px;
 
     letter-spacing: 0.06em;
     font-weight: 700;

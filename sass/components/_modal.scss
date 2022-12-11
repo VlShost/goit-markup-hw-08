@@ -150,12 +150,15 @@
 .modal__checkbox-icon {
     position: absolute;
     left: 0;
-    // margin-right: 8px;
     display: inline-block;
     width: 16px;
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
+
+    @media screen and (min-width: 980px) {
+        left: 10px;
+    }
 }
 
 .modal__checkbox:checked + .modal__checkbox-icon {

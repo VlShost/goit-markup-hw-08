@@ -3,8 +3,8 @@
 }
 
 .we-do__list {
-    // display: flex;
-    // justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .we-do__overlay {
@@ -29,5 +29,7 @@
 }
 
 .we-do {
-    display: none;
+    @media screen and (max-width: 1199px) {
+        display: none;        
+    }
 }

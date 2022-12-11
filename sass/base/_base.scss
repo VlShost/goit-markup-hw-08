@@ -26,11 +26,20 @@ body {
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .flex-align {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: $tablet) {
+        justify-content: space-between;        
+    }
 }
 
 .img {
@@ -50,4 +59,8 @@ body {
     font-size: 28px;
     line-height: 1.2;
     text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 36px;
+    }
 }

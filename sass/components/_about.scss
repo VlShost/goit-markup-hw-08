@@ -3,8 +3,9 @@
 }
 
 .about__list {
-    // display: flex;
-    // justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .about__item {
@@ -21,6 +22,10 @@
 
     @media screen and (min-width: $desktop) {
         flex-basis: calc((100% - 90px) / 4);
+        margin-bottom: 0;
+            &:last-child {
+                    margin-bottom: 0;
+                }
     }
 }
 
@@ -46,6 +51,10 @@
     line-height: 1.14;
     text-transform: uppercase;
     text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        text-align: start;
+    }
 }
 
 .about__info {
