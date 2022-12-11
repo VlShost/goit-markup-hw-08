@@ -776,6 +776,12 @@ p {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+@media screen and (max-width: 320px) {
+  .mobile-phone {
+    width: 250px;
+    font-size: 28px;
+  }
+}
 
 .mobile-mail {
   font-weight: 500;
@@ -789,6 +795,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 240px;
   margin-top: 64px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -797,6 +804,18 @@ p {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-right: 83px;
+}
+@media screen and (max-width: 320px) {
+  .mobile-socials {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .mobile-socials-item {
+    padding: 5px 0;
+  }
 }
 
 .socials-line {
@@ -1205,7 +1224,7 @@ p {
           transform-origin: top center;
   -webkit-transform: translate(-50%, -50%) scaleY(1);
           transform: translate(-50%, -50%) scaleY(1);
-  min-width: 450px;
+  min-width: 320px;
   min-height: 609px;
   padding: 40px;
   background-color: #ffffff;
@@ -1216,6 +1235,11 @@ p {
   transition: -webkit-transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1330,17 +1354,15 @@ p {
 }
 
 .modal__label-checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 8px;
+  display: block;
+  padding-left: 26px;
+  min-width: 100%;
   line-height: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__label-checkbox {
+    text-align: center;
+  }
 }
 
 .modal__checkbox {
@@ -1352,15 +1374,21 @@ p {
 .modal__checkbox-icon {
   position: absolute;
   left: 0;
+  top: 5px;
   display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
 }
-@media screen and (min-width: 980px) {
+@media screen and (max-width: 479px) {
   .modal__checkbox-icon {
-    left: 10px;
+    top: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__checkbox-icon {
+    left: 25px;
   }
 }
 

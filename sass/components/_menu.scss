@@ -103,13 +103,18 @@
 .mobile-phone {
     display: block;
     margin-bottom: 32px;
-
+    
     font-weight: 500;
     font-size: 34px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-
+    
     color: var(--accent-color);
+    
+    @media screen and (max-width: 320px) {
+        width: 250px;
+        font-size: 28px;
+    }
 }
 
 .mobile-mail {
@@ -122,10 +127,21 @@
 
 .mobile-socials {
     display: flex;
+    width: 240px;
     margin-top: 64px;
     align-items: center;
     justify-content: flex-start;
     margin-right: 83px;
+
+    @media screen and (max-width: 320px) {
+        flex-wrap: wrap;
+    }
+}
+
+.mobile-socials-item {
+    @media screen and (max-width: 320px) {
+        padding: 5px 0;
+    }
 }
 
 .socials-line {

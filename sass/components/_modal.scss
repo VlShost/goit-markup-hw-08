@@ -24,7 +24,7 @@
     transform-origin: top center;
     transform: translate(-50%, -50%) scaleY(1);
 
-    min-width: 450px;
+    min-width: 320px;
     min-height: 609px;
     padding: 40px;
 
@@ -33,6 +33,10 @@
     border-radius: 4px;
 
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: $mobile) {
+        min-width: 450px;
+    }
 }
 
 .backdrop.is-hidden .modal {
@@ -136,11 +140,14 @@
 }
 
 .modal__label-checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 8px;
+    display: block;
+    padding-left: 26px;
+    min-width: 100%;
     line-height: 24px;
+
+    @media screen and (min-width: $desktop) {
+        text-align: center;
+    }
 }
 
 .modal__checkbox {
@@ -150,14 +157,19 @@
 .modal__checkbox-icon {
     position: absolute;
     left: 0;
+    top: 5px;
     display: inline-block;
     width: 16px;
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
+    
+    @media screen and (max-width: 479px) {
+        top: 15px;
+    }
 
-    @media screen and (min-width: 980px) {
-        left: 10px;
+    @media screen and (min-width: $desktop) {
+        left: 25px;
     }
 }
 
