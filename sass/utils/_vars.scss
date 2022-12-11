@@ -2,6 +2,7 @@
     // colors
     --primary-backgroung-color: #FFFFFF;
     --primary-text-color: #757575;
+    --menu-text-color: #212121;
     --secondary-background-color: #F5F4FA;
     --accent-color: #2196F3;
     --logo-light: #ffffff;
@@ -19,3 +20,8 @@
     --logo-font: 'Raleway', sans-serif;
     --page-links-font: 'Roboto', sans-serif;
 }
+
+// adapt bps
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;

@@ -32,10 +32,10 @@
           </a>
           <ul class="header-nav__page-links list">
             <li class="header-nav__item">
-              <a href="./index.html" class="header-nav__link link"> Студія </a>
+              <a href="./index.html" class="header-nav__link link current"> Студія </a>
             </li>
             <li class="header-nav__item">
-              <a href="./portfolio.html" class="header-nav__link link current"> Портфоліо </a>
+              <a href="./portfolio.html" class="header-nav__link link"> Портфоліо </a>
             </li>
             <li class="header-nav__item">
               <a href="" class="header-nav__link link"> Контакти </a>
@@ -47,7 +47,7 @@
 
         <ul class="header-address list">
           <li class="header-address__item">
-            <a href="mailto:info@devstudio.com" class="header-address__link">
+            <a href="mailto:info@devstudio.com" class="header-address__link link">
               <svg class="header-address__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -55,7 +55,7 @@
             </a>
           </li>
           <li class="header-address__item">
-            <a href="tel:+38 096 111 11 11" class="header-address__link">
+            <a href="tel:+38 096 111 11 11" class="header-address__link link">
               <svg class="header-address__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -63,6 +63,20 @@
             </a>
           </li>
         </ul>
+
+        <!-- mobile-button -->
+
+        <div class="mobile-menu-container">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-icon" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -404,5 +418,60 @@
         </div>
       </div>
     </footer>
+
+
+        <!-- mobile menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="mobile-close" width="40" height="40">
+          <use href="./images/icons.svg#mobile-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li><a href="./index.html" class="mobile-link link">Студія</a></li>
+        <li><a href="./portfolio.html" class="mobile-link link current">Портфоліо</a></li>
+        <li><a href="" class="mobile-link link">Контакти</a></li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li><a href="tel:+380961111111" class="mobile-phone link">+38 096 111 11 11</a></li>
+        <li>
+          <a
+            href="mailto:info@devstudio.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="mobile-mail link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a href="" class="socials-link link">Instagram</a><span class="socials-line"></span>
+        </li>
+
+        <li class="mobile-socials-item">
+          <a href="" class="socials-link link">Twitter</a><span class="socials-line"></span>
+        </li>
+
+        <li class="mobile-socials-item">
+          <a href="" class="socials-link link">Facebook</a><span class="socials-line"></span>
+        </li>
+
+        <li class="mobile-socials-item"><a href="" class="socials-link link">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

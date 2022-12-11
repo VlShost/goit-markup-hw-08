@@ -24,8 +24,8 @@
     transform-origin: top center;
     transform: translate(-50%, -50%) scaleY(1);
 
-    min-width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
     padding: 40px;
 
     background-color: #ffffff;
@@ -130,12 +130,16 @@
 .modal__checkbox-field {
     position: relative;
     margin-top: 20px;
+
+    font-size: 12px;
+    line-height: 14px;
 }
 
 .modal__label-checkbox {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 8px;
     line-height: 24px;
 }
 
@@ -145,7 +149,8 @@
 
 .modal__checkbox-icon {
     position: absolute;
-    left: 10px;
+    left: 0;
+    // margin-right: 8px;
     display: inline-block;
     width: 16px;
     height: 15px;
