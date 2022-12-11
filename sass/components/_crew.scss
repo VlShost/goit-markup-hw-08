@@ -10,10 +10,13 @@
 .crew__list {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
+    justify-content: center;
 }
 
 .crew__item {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     margin-bottom: 30px;
 
     width: 450px;

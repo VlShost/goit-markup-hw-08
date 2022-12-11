@@ -9,16 +9,24 @@
 
 .about__item {
     margin-bottom: 30px;
-    width: 450px;
+    max-width: 450px;
 
     &:last-child {
         margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 90px) / 4);
     }
 }
 
 .about__item-wrapper {
     display: flex;
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     margin-bottom: 30px;
     align-items: center;
